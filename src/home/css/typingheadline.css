@@ -1,0 +1,59 @@
+.typing-headline-outer-div {
+  margin: 10px auto;
+  max-width: 450px;
+}
+
+.mobile-typing-headline{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.typing-headline {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  color: #333;
+}
+
+.word {
+  display: block;
+}
+
+.word span {
+  color: #ff5252;
+  position: relative;
+}
+
+.word span::after {
+  content: "";
+  width: 8px;
+  height: 100%;
+  background: #ff5252;
+  display: block;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  animation: blink 0.5s ease infinite alternate-reverse;
+}
+
+@keyframes blink {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 0%;
+  }
+}
+
+.word.empty {
+  visibility: hidden;
+}
+
+.word.empty span::after {
+  visibility: visible;
+  right: 0;
+}

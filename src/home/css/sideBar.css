@@ -1,0 +1,167 @@
+.navbar {
+  z-index: 2;
+  position: fixed;
+  background-color: #152238;
+  transition: width 200ms ease;
+  overflow: auto;
+  
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+
+  flex-direction: column;
+
+  /* align-items: center; */
+  height: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  color: white;
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7) blur(0.1);
+  transition: 600ms;
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: #1e1e24;
+  color: white;
+}
+
+.link-text {
+  display: none;
+  margin-left: 16px;
+}
+
+.nav-link svg {
+  min-width: 34px;
+  margin: 0 1.5rem;
+}
+
+.navbar:hover {
+  width: 14rem;
+}
+
+.navbar:hover .link-text {
+  display: block;
+}
+
+.fa-primary {
+  color: #ff7eee;
+}
+
+.fa-secondary {
+  color: #df49a6;
+}
+
+.fa-primary,
+.fa-secondary {
+  transition: 600ms;
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.logo img {
+  transform: rotate (360deg);
+  transition: transform 600ms;
+}
+
+.navbar:hover .logo img {
+  transform: rotate(-360deg);
+}
+
+.nav-logo {
+  max-width: 60px;
+  max-height: 60px;
+
+  margin-left: 1rem;
+}
+.home-icon {
+  max-width: 60px;
+  max-height: 60px;
+}
+.home-icon-container:hover .home-icon {
+  fill: #72d4fe;
+}
+.location-icon {
+  max-width: 60px;
+  max-height: 60px;
+}
+.location-icon-container:hover .location-icon {
+  fill: #ff5252;
+}
+
+.pricing-icon {
+  max-width: 60px;
+  max-height: 60px;
+}
+.pricing-icon-container:hover .pricing-icon {
+  fill: #00a35b;
+}
+
+.award-icon {
+  max-width: 60px;
+  max-height: 60px;
+}
+.award-icon-container:hover .award-icon {
+  fill: #fd9900;
+}
+
+.about-icon {
+  max-width: 60px;
+  max-height: 60px;
+}
+.about-icon-container:hover .about-icon {
+  fill: #2a63ac;
+}
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    transition: none;
+    height: 5rem;
+  }
+
+  .logo {
+    display: none;
+    transition:none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    transition:none;
+  }
+
+  .nav-link {
+    justify-content: center;
+    transition:none;
+  }
+
+  main {
+    margin: 0;
+  }
+}
+
+
+
