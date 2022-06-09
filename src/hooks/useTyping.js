@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
+/**
+Constants for animation
+*/
 
 const FORWARD = "forward";
 const BACKWARD = "backward";
 
-/*
- * Read the blog post here:
- * https://letsbuildui.dev/articles/a-typing-text-effect-with-react-hooks
- */
+
 export const useTypingText = (words, keySpeed = 1000, maxPauseAmount = 10) => {
   const [wordIndex, setWordIndex] = useState(0);
   const [currentWord, setCurrentWord] = useState(words[wordIndex].split(""));
@@ -30,7 +30,7 @@ export const useTypingText = (words, keySpeed = 1000, maxPauseAmount = 10) => {
       if (letterIndex.current >= words[wordIndex].length) {
         direction.current = BACKWARD;
 
-        // Begin pause by setting the maxPauseAmount prop equal to the counter
+       
         pauseCounter = maxPauseAmount;
         return;
       }
@@ -56,7 +56,7 @@ export const useTypingText = (words, keySpeed = 1000, maxPauseAmount = 10) => {
     };
 
     typingInterval.current = setInterval(() => {
-      // Wait until counter hits 0 to do any further action
+     
       if (pauseCounter > 0) {
         pauseCounter = pauseCounter - 1;
         return;
