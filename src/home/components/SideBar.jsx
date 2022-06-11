@@ -9,11 +9,12 @@ import InfoIcon from "@mui/icons-material/Info";
 import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 import { LocationOn, MonetizationOn  } from "@mui/icons-material";
 import CollectionsOutlinedIcon from '@mui/icons-material/CollectionsOutlined';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 function Sidebar (_props) {
 
   return (
+    <Router>
     <nav class="navbar" style={{height:"100vh" }}>
       <ul class="navbar-nav mobile-nav">
         
@@ -29,14 +30,14 @@ function Sidebar (_props) {
             </div>
           </li>
         
-        
+        <Link to="/" >
           <li class="nav-item home-icon-container bloc-icon">
             <div class="nav-link">
               <HomeIcon className="home-icon"/>
               <span class="link-text">Home</span>
             </div>
           </li>
-          
+        </Link>
         <li class="nav-item coach-icon-container">
           <div class="nav-link">
             <SchoolRoundedIcon className="coach-icon"/>
@@ -49,12 +50,14 @@ function Sidebar (_props) {
             <span class="link-text">Location</span>
           </div>
         </li>
-        <li class="nav-item pricing-icon-container">
-          <div class="nav-link">
-            <MonetizationOn className="pricing-icon"/>
-            <span class="link-text">Pricing</span>
-          </div>
-        </li>
+        <Link to="/pricing">
+          <li class="nav-item pricing-icon-container">
+            <div class="nav-link">
+              <MonetizationOn className="pricing-icon"/>
+              <span class="link-text">Pricing</span>
+            </div>
+          </li>
+        </Link>
         <li class="nav-item gallery-icon-container">
           <div class="nav-link">
             <CollectionsOutlinedIcon className="gallery-icon"/>
@@ -78,6 +81,7 @@ function Sidebar (_props) {
         </li>
       </ul>
     </nav>
+    </Router>
   );
 };
 

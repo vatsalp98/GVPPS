@@ -5,7 +5,7 @@ import SideBar from './home/components/SideBar';
 import HomeScreen from './home/screens/HomeScreen';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PricingScreen from './home/screens/PricingScreen';
-
+import GalleryScreen from './home/screens/GalleryScreen';
 
 function App() {
   const isMobileScreen = useMediaQuery('(max-width: 600px)')
@@ -16,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<HomeScreen />} />
           <Route path="/pricing" element={<PricingScreen />} />
+          <Route path="/gallery" element={<GalleryScreen />} />
         </Routes>
       </Router>
     </>
