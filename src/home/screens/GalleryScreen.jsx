@@ -2,8 +2,12 @@ import React from 'react';
 import '../css/galleryScreen.css';
 import { useState} from 'react';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import { useMediaQuery } from '@mui/material';
+import MobileBottomNav from '../components/MobileBottomNav';
+import SideBar from '../components/SideBar';
 
 function GalleryScreen() {
+  const bool = useMediaQuery('(max-width: 600px)')
   let data = [
     {
       id: 1,
@@ -68,6 +72,7 @@ function GalleryScreen() {
 
   return (
     <>
+      {bool === true ? <MobileBottomNav/> : <SideBar /> }
       <div className={modal ? 'modal open' : 'modal'}>
         <img src={tempImg} alt="Gallery Content" />
         <CloseRoundedIcon onClick={() => {

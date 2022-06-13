@@ -9,12 +9,12 @@ import InfoIcon from "@mui/icons-material/Info";
 import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 import { LocationOn, MonetizationOn  } from "@mui/icons-material";
 import CollectionsOutlinedIcon from '@mui/icons-material/CollectionsOutlined';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Sidebar (_props) {
 
   return (
-    <Router>
+    
     <nav class="navbar" style={{height:"100vh" }}>
       <ul class="navbar-nav mobile-nav">
         
@@ -44,12 +44,14 @@ function Sidebar (_props) {
             <span class="link-text">Coaches</span>
           </div>
         </li>
-        <li class="nav-item location-icon-container">
-          <div class="nav-link">
-            <LocationOn className="location-icon"/>
-            <span class="link-text">Location</span>
-          </div>
-        </li>
+        <Link to="/location">
+          <li class="nav-item location-icon-container">
+            <div class="nav-link">
+              <LocationOn className="location-icon"/>
+              <span class="link-text">Location</span>
+            </div>
+          </li>
+        </Link>
         <Link to="/pricing">
           <li class="nav-item pricing-icon-container">
             <div class="nav-link">
@@ -58,12 +60,14 @@ function Sidebar (_props) {
             </div>
           </li>
         </Link>
-        <li class="nav-item gallery-icon-container">
-          <div class="nav-link">
-            <CollectionsOutlinedIcon className="gallery-icon"/>
-            <span class="link-text">Gallery</span>
-          </div>
-        </li>
+        <Link to="/gallery">
+          <li class="nav-item gallery-icon-container">
+            <div class="nav-link">
+              <CollectionsOutlinedIcon className="gallery-icon"/>
+              <span class="link-text">Gallery</span>
+            </div>
+          </li>
+        </Link>
         <li class="nav-item award-icon-container">
           <div class="nav-link">
             <WorkspacePremiumIcon className="award-icon"/>
@@ -81,7 +85,7 @@ function Sidebar (_props) {
         </li>
       </ul>
     </nav>
-    </Router>
+    
   );
 };
 
