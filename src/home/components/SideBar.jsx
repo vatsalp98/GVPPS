@@ -38,12 +38,14 @@ function Sidebar (_props) {
             </div>
           </li>
         </Link>
-        <li class="nav-item coach-icon-container">
-          <div class="nav-link">
-            <SchoolRoundedIcon className="coach-icon"/>
-            <span class="link-text">Coaches</span>
-          </div>
-        </li>
+        <Link to="/coaches">
+          <li class="nav-item coach-icon-container">
+            <div class="nav-link">
+              <SchoolRoundedIcon className="coach-icon"/>
+              <span class="link-text">Coaches</span>
+            </div>
+          </li>
+        </Link>
         <Link to="/location">
           <li class="nav-item location-icon-container">
             <div class="nav-link">
@@ -68,21 +70,23 @@ function Sidebar (_props) {
             </div>
           </li>
         </Link>
-        <li class="nav-item award-icon-container">
-          <div class="nav-link">
-            <WorkspacePremiumIcon className="award-icon"/>
-            <span class="link-text">Awards</span>
-          </div>
-        </li>
-       
+        <Link to="/awards">
+          <li class="nav-item award-icon-container">
+            <div class="nav-link">
+              <WorkspacePremiumIcon className="award-icon"/>
+              <span class="link-text">Awards</span>
+            </div>
+          </li>
+        </Link>
         
-       
-        <li class="nav-item">
-          <div class="nav-link about-icon-container">
-            <InfoIcon  className="about-icon"/>
-            <span class="link-text">About Us</span>
-          </div>
-        </li>
+        <Link to="/about">
+          <li class="nav-item">
+            <div class="nav-link about-icon-container">
+              <InfoIcon  className="about-icon"/>
+              <span class="link-text">About Us</span>
+            </div>
+          </li>
+        </Link>
       </ul>
     </nav>
     
