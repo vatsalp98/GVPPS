@@ -13,7 +13,7 @@ export default function ActionAreaCard() {
           component="img"
           height="140"
           image="/map.png"
-          alt="green iguana"
+          alt="google map picture"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

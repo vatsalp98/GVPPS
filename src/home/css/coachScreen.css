@@ -6,14 +6,15 @@
 .coach-section {
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
 }
+
 
 .action-card {
-    padding: 5px;
-    margin: 5px;
+    margin: 10px;
 }
 
-@medial only screen and (max-width: 568px) {
+@media (max-width: 568px) {
     .coach-section {
         display: flex;
         flex-direction: column;
