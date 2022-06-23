@@ -1,5 +1,6 @@
 import { ArrowForwardIosRounded } from "@mui/icons-material";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../css/menucard.css";
 
 /**
@@ -8,10 +9,11 @@ import "../css/menucard.css";
  * @param {dy} is offset for image on y axis
  * This adjusts the image position on the card
  */
-function MenuCard({ title, img, color, dx, dy }) {
+function MenuCard({ title, img, color, dx, dy ,navigateTo}) {
+  const navigate = useNavigate();
   return (
     <>
-      <div class="outer-div" style={{ marginBottom: "15px" }}>
+      <div class="outer-div" style={{ marginBottom: "15px" }} onClick={()=>navigate(navigateTo)}>
         <div class="text-container" style={{ backgroundColor: color }}>
           <div className="text-inner-container">
             <div className="text-title">{title}</div>

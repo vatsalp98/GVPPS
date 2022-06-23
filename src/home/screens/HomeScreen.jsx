@@ -16,6 +16,7 @@ import TypingHeadline from "../components/TypingHeadline";
 import { useMediaQuery } from "@mui/material";
 import MobileHeadline from "../components/MobileHeadline";
 
+
 const theme = createTheme();
 
 export default function HomeScreen() {
@@ -81,12 +82,14 @@ export default function HomeScreen() {
                 dx={"30px"}
                 dy={"-65px"}
                 title={"Coaches"}
+                navigateTo={"/coaches"}
               />
               <MenuCard
                 img="https://gvpps.ca/wp-content/uploads/2022/03/3258b948bdd02c42c3004bbf7883c17f-1.jpg"
                 color={"#90877c"}
                 title={"Training"}
                 dx={"35px"}
+                navigateTo={"/pricing"}
               />
               <MenuCard
                 dx={"30px"}
@@ -94,6 +97,7 @@ export default function HomeScreen() {
                 img="/casual.png"
                 color={"#407bff"}
                 title={"Drop Ins"}
+                navigateTo={"/pricing"}
               />
               {
                 //Added this so that user can scroll properly on mobile
