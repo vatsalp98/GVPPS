@@ -5,41 +5,177 @@ import SideBar from '../components/SideBar';
 import SectionTitle from '../components/SectionTitle';
 import ActionCard from '../components/ActionCard';
 import '../css/coachScreen.css';
+import styled from 'styled-components';
+
+const CoachScreenStyle = styled.div`
+    body {
+      background-color: #546E7A;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #546E7A;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .coach-section {
+      display: flex;
+      flex-direction: row;
+      margin-top: 50px;
+    }
+    
+    .coach-item {
+      margin-left: 10px;
+      margin-top: 70px;
+      margin-right: 10px;
+      margin-bottom: 150px;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 200px;
+      border-radius: 20%;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+
+    /* Style the back side */
+    .flip-card-back {
+      background-color: #757575;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    @media (max-width: 568px) {
+      .coach-section {
+          display: flex;
+          flex-direction: column;
+      }
+      .container {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+      }
+    }
+  `;
 
 function CoachScreen() {
     const bool = useMediaQuery('(max-width: 600px)')
     return (
     <>
         {bool === true ? <MobileBottomNav/> : <SideBar /> }
-        <div className="container">
-          <SectionTitle 
-            title="Our Coaches"
-            subtitle="BCTTA Approved"
-            className="section-title"
-          />
-          <div className="coach-section">
-            <ActionCard 
-              title="Helen WU"
-              subtitle="Head Coach"
-              className="action-card"
+        <CoachScreenStyle>
+          <div className="container">
+            <SectionTitle 
+              title="Our Coaches"
+              subtitle="BCTTA Approved"
+              className="section-title"
             />
-            <ActionCard 
-              title="Yiu Tak Tse"
-              subtitle="Head Coach"
-              className="action-card"
-            />
-            <ActionCard 
-              title="Darren Yip"
-              subtitle="Head Coach"
-              className="action-card"
-            />
-            <ActionCard 
-              title="Jeff Guo"
-              subtitle="Head Coach"
-              className="action-card"
-            />
+            <div className="coach-section">
+              <div className="coach-item">
+                <div className="flip-card">
+                  <div className="flip-card-inner">
+                    <div className="flip-card-front">
+                      <ActionCard 
+                        title="Helen WU"
+                        subtitle="Head Coach"
+                        id="coach-helen"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <h2>Helen WU</h2>
+                      <p>Head Coach</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="coach-item">
+                <div className="flip-card">
+                  <div className="flip-card-inner">
+                    <div className="flip-card-front">
+                      <ActionCard 
+                        title="Yiu Tak Tse"
+                        subtitle="Assistant Coach"
+                        id="coach-yiu"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <h2>Yiu Tak Tse</h2>
+                      <p>Assistant Coach</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="coach-item">
+                <div className="flip-card">
+                  <div className="flip-card-inner">
+                    <div className="flip-card-front">
+                      <ActionCard 
+                        title="Darren Yip"
+                        subtitle="Assistant Coach"
+                        id="coach-darren"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <h2>Darren Yip</h2>
+                      <p>Assistant Coach</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="coach-item">
+                <div className="flip-card">
+                  <div className="flip-card-inner">
+                    <div className="flip-card-front">
+                      <ActionCard 
+                        title="Jeff Guo"
+                        subtitle="Assistant Coach"
+                        id="coach-jeff"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <h2>Jeff Guo</h2>
+                      <p>Assistant Coach</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </CoachScreenStyle>
     </>
   )
 }
