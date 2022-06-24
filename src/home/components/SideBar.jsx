@@ -54,11 +54,11 @@ function Sidebar (_props) {
             </div>
           </li>
         </Link>
-        <Link to="/pricing">
+        <Link to="/training">
           <li class="nav-item pricing-icon-container">
             <div class="nav-link">
               <MonetizationOn className="pricing-icon"/>
-              <span class="link-text">Pricing</span>
+              <span class="link-text">Training</span>
             </div>
           </li>
         </Link>
