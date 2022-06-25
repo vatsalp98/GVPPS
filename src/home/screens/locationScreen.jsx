@@ -12,7 +12,7 @@ const LocationScreenStyle = styled.div`
     height: 100%;
     padding-top: 300px;
     padding-bottom: 350px;
-    background-color: #B0BEC5;
+    // background-color: #B0BEC5;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -44,12 +44,12 @@ function LocationScreen() {
             <LocationScreenStyle>
               <div className="remainingHeight">
                 <SectionTitle 
-                title='Open to Everyone'
-                subtitle='Visit Us Now'/>
+                title={"Visit us now"}
+                subtitle={`2909 Bainbridge Ave #102, \n Burnaby, BC V5A 2S9`}/>
                 <div className="location-card">
                   <a href="https://www.google.com/maps/dir//102%20-%202909%20Bainbridge%20Ave%20Burnaby%20BC%20V5B%202S9" target={"_blank"}>
                     <MenuCard
-                      title="Location"
+                      title="Google Maps"
                       color="#004D40"
                       img="./map.png"
                       dx="0px"

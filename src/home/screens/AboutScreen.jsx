@@ -14,12 +14,19 @@ const AboutSectionStyle = styled.div`
     justify-content: flex-start;
     text-align: left;
     bacground-color: #272627;
+    margin: auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   p {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
     font-size: 1.2rem;
+    
     margin: 0px;
   }
   .aboutSection_left,
@@ -34,6 +41,22 @@ const AboutSectionStyle = styled.div`
     border-radius: 25px;
     margin: 10px;
   }
+
+  @media only screen and (max-width: 400px) {
+    .container {
+      display: flex;
+      align-items: center;
+      // justify-content: flex-start;
+      text-align: left;
+      width:300px;
+      margin: auto;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+}
 `;
 
 function AboutScreen() {
@@ -47,8 +70,8 @@ function AboutScreen() {
             <div className="aboutSection_left">
               <SectionTitle
                 className="section-title"
-                subtitle='G.V.P.P.S.'
-                title='About Us'
+                subtitle='About us'
+                title=''
               />
               <p>
                 Founded in September 2019 as a Non-Profit Organization.

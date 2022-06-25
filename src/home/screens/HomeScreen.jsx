@@ -89,7 +89,7 @@ export default function HomeScreen() {
                 color={"#90877c"}
                 title={"Training"}
                 dx={"35px"}
-                navigateTo={"/pricing"}
+                navigateTo={"/training"}
               />
               <MenuCard
                 dx={"30px"}
@@ -97,7 +97,7 @@ export default function HomeScreen() {
                 img="/casual.png"
                 color={"#407bff"}
                 title={"Drop Ins"}
-                navigateTo={"/pricing"}
+                navigateTo={"/training"}
               />
               {
                 //Added this so that user can scroll properly on mobile

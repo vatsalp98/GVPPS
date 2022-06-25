@@ -1,0 +1,43 @@
+.summerListItem::marker {
+  font-size: 2rem;
+  color: #c8f7c5;
+}
+
+.adultClassItem::marker {
+  color: #99cccc;
+
+  font-size: 2rem;
+}
+
+.schedule-img {
+  width: 900;
+  height: 700;
+}
+
+@media only screen and (max-width: 400px) {
+  .schedule-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .training-title {
+    font-size: 26px;
+    font-weight: 900w;
+  }
+
+  .training-subtitle {
+    font-size: 10px;
+    font-weight: 900w;
+  }
+
+  .summerListItem::marker {
+    font-size: 1rem;
+    color: #c8f7c5;
+  }
+
+  .adultClassItem::marker {
+    color: #99cccc;
+
+    font-size: 1rem;
+  }
+}

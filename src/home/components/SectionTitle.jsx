@@ -8,12 +8,13 @@ const SectionTitleStyle = styled.div`
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
         font-size: 2rem;
+       
     }
-    h2 {
+    subtitle {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
-        font-size: 5rem;
+        font-weight:500w;
         margin-top: 0.5rem;
         margin-bottom: 1rem;
         text-tranform: uppercase;
@@ -34,8 +35,8 @@ function SectionTitle({
 }) {
   return (
     <SectionTitleStyle>
-        <p>{subtitle}</p>
-        <h2>{title}</h2>
+        <p style={{fontWeight:"bolder",}}> {subtitle}</p>
+        <p >{title}</p>
     </SectionTitleStyle>
   )
 }
