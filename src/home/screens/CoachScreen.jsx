@@ -25,6 +25,8 @@ const CoachScreenStyle = styled.div`
     .coach-section {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      justify-content: center;
       margin-top: 50px;
     }
     
@@ -38,7 +40,7 @@ const CoachScreenStyle = styled.div`
     .flip-card {
       background-color: transparent;
       width: 300px;
-      height: 200px;
+      height: 500px;
       border-radius: 20%;
       perspective: 1000px; /* Remove this if you don't want the 3D effect */
     }
@@ -109,7 +111,8 @@ function CoachScreen() {
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <ActionCard 
+                      <ActionCard
+                        imgSrc='/helen.png'
                         title="Helen WU"
                         subtitle="Head Coach"
                         id="coach-helen"
@@ -118,11 +121,20 @@ function CoachScreen() {
                     <div class="flip-card-back">
                       <h2>Helen WU</h2>
                       <p>Head Coach</p>
+                      <p>Achievements</p>
+                      <ul>
+                        <li>Graduate of Shanghai Physical Education College, Class of 1985</li>
+                        <li>Coach of Shanghai Junior Team 1980-1985</li>
+                        <li>Assistant Coach Of BC Junior Team 1989-1990</li>
+                        <li>BC Junior Team Head Coach 1994-1997 and 1998-2002</li>
+                        <li>Member of Chinese National Youth Team 1972</li>
+                        <li>Co-Founder of GVTTA and Coach from 2002-2019</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="coach-item">
+              {/* <div className="coach-item">
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
@@ -155,12 +167,13 @@ function CoachScreen() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="coach-item">
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <ActionCard 
+                      <ActionCard
+                        imgSrc='/jeff.png' 
                         title="Jeff Guo"
                         subtitle="Assistant Coach"
                         id="coach-jeff"
@@ -169,6 +182,12 @@ function CoachScreen() {
                     <div class="flip-card-back">
                       <h2>Jeff Guo</h2>
                       <p>Assistant Coach</p>
+                      <p>Achievements</p>
+                      <ul>
+                        <li>Professional Player, Member of Heilongjiang Table Tennis Provincial Team</li>
+                        <li>BC Provincial Junior Team Coach</li>
+                        <li>Saskatchewan Provincial Team technical Coach</li>
+                      </ul>
                     </div>
                   </div>
                 </div>

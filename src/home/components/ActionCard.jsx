@@ -16,6 +16,7 @@ export default function ActionAreaCard({
         <CardMedia
           component="img"
           height="140"
+          maxHeight="140"
           image={imgSrc}
           alt="green iguana"
         />

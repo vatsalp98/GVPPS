@@ -33,8 +33,7 @@ export default function HomeScreen() {
           md={6}
           sx={{
             borderRadius: "0 50px 50px 0",
-            backgroundImage:
-              "url(https://gvpps.ca/wp-content/uploads/2022/03/3258b948bdd02c42c3004bbf7883c17f-1.jpg)",
+            backgroundImage:"url(/home.jpg)",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundColor: (t) =>
