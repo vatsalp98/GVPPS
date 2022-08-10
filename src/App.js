@@ -5,6 +5,7 @@ import MobileBottomNav from './home/components/MobileBottomNav';
 import SideBar from './home/components/SideBar';
 import { useMediaQuery } from '@mui/material';
 import Provider, { BottomNav } from "./context/context";
+import Footer from './home/components/Footer';
 function App() {
   
   
