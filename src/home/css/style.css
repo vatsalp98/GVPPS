@@ -348,6 +348,20 @@ body {
   font-style: normal;
 }
 
+.centered {
+  position: absolute;
+  top: 0%;
+  right: 25%;
+}
+
+@media (max-width: 568px) { 
+  .centered {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+  }
+}
+
 .tr{
   position: absolute;
   top: 0px;

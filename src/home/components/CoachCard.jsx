@@ -6,7 +6,7 @@ import '../css/style.css';
 class Services extends Component {
     render() {
         return (
-            <div className="section tr section-padding sigma_service-sec style-16">
+            <div className="section centered section-padding sigma_service-sec style-16">
                 <div className="container">
                     <div className="row">
                         {/* Data */}
