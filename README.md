@@ -15,5 +15,5 @@
 
 ## Site deployed at 
 ```
-https://heroic-jelly-12099b.netlify.app/
+https://gvpps.com
 ```
