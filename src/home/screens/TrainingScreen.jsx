@@ -26,7 +26,7 @@ function TrainingScreen() {
             <h3 className="training-title" style={{ fontWeight: 900 }}>
               Training Schedule
             </h3>
-            <ul>
+            {/* <ul>
               <li
                 className="summerListItem training-subtitle"
                 style={{ fontWeight: 700 }}
@@ -39,7 +39,7 @@ function TrainingScreen() {
               >
                 Regular Classes in Blue
               </li>
-            </ul>
+            </ul> */}
             <Zoom>
               <img
                 className="schedule-img"
