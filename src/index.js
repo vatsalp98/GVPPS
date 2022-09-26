@@ -10,6 +10,7 @@ import AboutScreen from './home/screens/AboutScreen';
 import AwardsScreen from './home/screens/AwardsScreen';
 import CoachScreen from './home/screens/CoachScreen';
 import TrainingScreen from './home/screens/TrainingScreen';
+import GrandOpening from './home/screens/GrandOpening';
 
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +25,7 @@ root.render(
         <Route path="/about" element={<AboutScreen />} />
         <Route path="/awards" element={<AwardsScreen />} />
         <Route path="/coaches" element={<CoachScreen />} />
+        <Route path="/grandopening" element={<GrandOpening />} />
       </Routes>
     </React.StrictMode>
   </Router>
