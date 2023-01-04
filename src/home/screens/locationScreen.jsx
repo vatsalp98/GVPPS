@@ -22,6 +22,7 @@ const LocationScreenStyle = styled.div`
   }
   .location-card {
     margin: auto;
+    margin-top: 50px;
   }
 
   @media (max-width: 768px) {
@@ -46,8 +47,18 @@ function LocationScreen() {
                 <SectionTitle 
                 title={"Visit us now"}
                 subtitle={`2909 Bainbridge Ave #102, \n Burnaby, BC V5A 2S9`}/>
+                <div>
+                  Contact Information
+                </div>
+                <div style={{
+                  marginBottom: '15px',
+                  fontWeight: 'bold',
+                  fontSize: 18,
+                }}>
+                  +1 604-551-0896
+                </div>
                 <div className="location-card">
-                  <a href="https://www.google.com/maps/dir//102%20-%202909%20Bainbridge%20Ave%20Burnaby%20BC%20V5B%202S9" target={"_blank"}>
+                  <a href="https://www.google.com/maps/dir//102%20-%202909%20Bainbridge%20Ave%20Burnaby%20BC%20V5B%202S9" target="_blank" rel="noreferrer">
                     <MenuCard
                       title="Google Maps"
                       color="#004D40"
