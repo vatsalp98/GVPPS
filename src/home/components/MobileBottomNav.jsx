@@ -67,7 +67,7 @@ function MobileBottomNav() {
             </div>
           </div>
         </Link>
-        <Link
+        {/* <Link
           to="/about"
           onClick={() => changeSelected(BottomNav.aboutus)}
         >
@@ -82,7 +82,7 @@ function MobileBottomNav() {
               />
             </div>
           </div>
-        </Link>
+        </Link> */}
       </nav>
     </>
   );

@@ -26,6 +26,16 @@ function TrainingScreen() {
             <h3 className="training-title" style={{ fontWeight: 900 }}>
               Training Schedule
             </h3>
+            <div>
+              For custom training schedules contact this number below:
+            </div>
+            <div style={{
+              marginBottom: '15px',
+              fontWeight: 'bold',
+              fontSize: 18,
+            }}>
+              +1 604-551-0896
+            </div>
             {/* <ul>
               <li
                 className="summerListItem training-subtitle"

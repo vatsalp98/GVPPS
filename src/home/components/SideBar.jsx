@@ -62,6 +62,14 @@ function Sidebar (_props) {
             </div>
           </li>
         </Link>
+        <Link to="/grandopening">
+          <li class="nav-item">
+            <div class="nav-link about-icon-container">
+              <InfoIcon  className="about-icon"/>
+              <span class="link-text">Grand Opening</span>
+            </div>
+          </li>
+        </Link>
         <Link to="/gallery">
           <li class="nav-item gallery-icon-container">
             <div class="nav-link">
@@ -79,14 +87,15 @@ function Sidebar (_props) {
           </li>
         </Link>
         
-        <Link to="/about">
+        {/* <Link to="/about">
           <li class="nav-item">
             <div class="nav-link about-icon-container">
               <InfoIcon  className="about-icon"/>
               <span class="link-text">About Us</span>
             </div>
           </li>
-        </Link>
+        </Link> */}
+       
       </ul>
     </nav>
     
